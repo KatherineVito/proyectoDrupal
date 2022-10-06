@@ -1,0 +1,30 @@
+uuid: 12ff2a9c-abc2-4642-81c6-09f1996a9cf4
+langcode: es
+status: true
+dependencies:
+  module:
+    - file
+    - image
+    - user
+id: user.avatars_user_picture
+field_name: avatars_user_picture
+entity_type: user
+type: image
+settings:
+  default_image:
+    uuid: null
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  target_type: file
+  display_field: false
+  display_default: false
+  uri_scheme: public
+module: image
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

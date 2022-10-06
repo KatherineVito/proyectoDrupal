@@ -1,0 +1,22 @@
+uuid: bf4fcee8-8ef1-47e8-a325-e9c346d2c1fa
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - forcontu_bartik
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: forcontu_bartik_content
+theme: forcontu_bartik
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Contenido principal de la página'
+  provider: system
+  label_display: '0'
+visibility: {  }

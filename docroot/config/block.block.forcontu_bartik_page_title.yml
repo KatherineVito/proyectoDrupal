@@ -1,0 +1,20 @@
+uuid: d9235130-bb34-4294-bd5b-c5edc820d113
+langcode: es
+status: true
+dependencies:
+  theme:
+    - forcontu_bartik
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: forcontu_bartik_page_title
+theme: forcontu_bartik
+region: content
+weight: -50
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Título de la página'
+  provider: core
+  label_display: '0'
+visibility: {  }

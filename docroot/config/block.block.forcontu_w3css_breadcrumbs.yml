@@ -1,0 +1,22 @@
+uuid: 9cdbfb30-2c5a-414b-869a-ad5f7af4c4c5
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - forcontu_w3css
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: forcontu_w3css_breadcrumbs
+theme: forcontu_w3css
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: 'Enlaces de ayuda a la navegación'
+  provider: system
+  label_display: '0'
+visibility: {  }

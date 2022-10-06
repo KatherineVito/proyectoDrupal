@@ -1,0 +1,8 @@
+uuid: 3bfc4a39-6b1c-49bf-9ff1-2199a806f1c3
+langcode: es
+status: true
+dependencies: {  }
+id: devel-paswidokaclireslah
+label: Uowr
+description: 'Descripción de Uowr'
+locked: false

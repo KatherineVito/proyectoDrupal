@@ -1,0 +1,6 @@
+name: Forcontu Config
+type: module
+description: Config
+package: Forcontu
+core: 8.x
+core_version_requirement: ^8 || ^9

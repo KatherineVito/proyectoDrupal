@@ -1,0 +1,14 @@
+<?php
+/**
+ *  Implements hook_install().
+ */
+function forcontu_config_install() {
+
+  $site_mail = \Drupal::config('system.site')->get('mail');
+  $site_name = \Drupal::config('system.site')->get('name');
+
+  \Drupal::configFactory()->getEditable('forcontu_config.settings')
+    ->set('newsletter.default_from_email', $site_mail)
+    ->set('newsletter.subject', $site_name)
+    ->save();
+}

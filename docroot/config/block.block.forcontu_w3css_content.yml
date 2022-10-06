@@ -1,0 +1,22 @@
+uuid: ad0445a2-ec65-440b-977d-ac69e18a8117
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - forcontu_w3css
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: forcontu_w3css_content
+theme: forcontu_w3css
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Contenido principal de la página'
+  provider: system
+  label_display: '0'
+visibility: {  }

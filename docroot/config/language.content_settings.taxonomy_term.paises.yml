@@ -1,0 +1,11 @@
+uuid: 68618b48-78a4-43f0-b9b0-d062a735d1ae
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.paises
+id: taxonomy_term.paises
+target_entity_type_id: taxonomy_term
+target_bundle: paises
+default_langcode: site_default
+language_alterable: false

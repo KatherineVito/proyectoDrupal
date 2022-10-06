@@ -1,0 +1,51 @@
+uuid: d9e095e4-eaf5-4c9d-9893-6b12a7be7d9f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.publicacion.body
+    - field.field.node.publicacion.field_fecha_publicacion
+    - field.field.node.publicacion.field_portada
+    - node.type.publicacion
+  module:
+    - datetime
+    - image
+    - text
+    - user
+id: node.publicacion.default
+targetEntityType: node
+bundle: publicacion
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_fecha_publicacion:
+    weight: 103
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_portada:
+    weight: 102
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

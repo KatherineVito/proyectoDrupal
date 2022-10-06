@@ -1,0 +1,7 @@
+block.settings.forcontu_test_simpletestblock:
+  type: block_settings
+  label: 'SimpleTestBlock block'
+  mapping:
+    foo:
+      type: string
+      label: Foo

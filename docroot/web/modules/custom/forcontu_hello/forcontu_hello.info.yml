@@ -1,0 +1,10 @@
+name: Forcontu Hello
+type: module
+description: Displays a basic page.
+package: Forcontu
+core_version_requirement: ^8 || ^9
+dependencies:
+  - node
+  - serialization
+configure: forcontu_hello.admin
+version: 1.0

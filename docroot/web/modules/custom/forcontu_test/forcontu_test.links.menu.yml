@@ -1,0 +1,4 @@
+forcontu_test.settings:
+  title: Settings
+  route_name: forcontu_test.settings
+  weight: 10

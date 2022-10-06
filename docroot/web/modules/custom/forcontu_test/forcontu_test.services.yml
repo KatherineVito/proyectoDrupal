@@ -1,0 +1,6 @@
+services:
+  forcontu_test.twig_extension:
+    class: Drupal\forcontu_test\ForcontuTestTwigExtension
+    arguments: ['@database']
+    tags:
+      - { name: twig.extension }

@@ -1,0 +1,43 @@
+uuid: 183ed584-c1d7-4129-b1a4-3f5ceaa2ca07
+langcode: es
+status: true
+dependencies:
+  config:
+    - comment.type.comentarios_noticia
+    - field.field.comment.comentarios_noticia.comment_body
+  module:
+    - text
+id: comment.comentarios_noticia.default
+targetEntityType: comment
+bundle: comentarios_noticia
+mode: default
+content:
+  author:
+    weight: -2
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  comment_body:
+    type: text_textarea
+    weight: 11
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  subject:
+    type: string_textfield
+    weight: 10
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

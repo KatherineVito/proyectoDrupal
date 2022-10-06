@@ -1,0 +1,20 @@
+langcode: es
+status: true
+dependencies:
+  module:
+    - forcontu_blocks
+  theme:
+    - bartik
+id: highlightedcontent
+region: sidebar_second
+weight: 0
+provider: null
+plugin: forcontu_blocks_highlighted_content_block
+settings:
+  id: forcontu_blocks_highlighted_content_block
+  label: 'Highlighted Content'
+  provider: forcontu_blocks
+  label_display: visible
+  block_message: 'lorem ipsum'
+  node_number: '3'
+visibility: { }

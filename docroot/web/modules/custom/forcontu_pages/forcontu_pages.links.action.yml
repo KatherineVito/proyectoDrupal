@@ -1,0 +1,11 @@
+forcontu_pages.link_action1:
+  route_name: 'forcontu_pages.action1'
+  title: 'Add Something link 1'
+  appears_on:
+    - forcontu_pages.links
+
+forcontu_pages.link_action2:
+  route_name: forcontu_pages.action2
+  title: 'Add something link 2'
+  appears_on:
+    - system.logging_settings

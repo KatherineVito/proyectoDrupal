@@ -1,0 +1,5 @@
+services:
+  forcontu_theming.twig.extension:
+    class: Drupal\forcontu_theming\TwigExtension\ForcontuThemingTwigExtension
+    tags:
+      - { name: twig.extension }

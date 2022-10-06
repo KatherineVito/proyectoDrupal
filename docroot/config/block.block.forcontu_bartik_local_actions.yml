@@ -1,0 +1,20 @@
+uuid: 3df74c3e-0549-4a45-acf6-a0752d1f157e
+langcode: es
+status: true
+dependencies:
+  theme:
+    - forcontu_bartik
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: forcontu_bartik_local_actions
+theme: forcontu_bartik
+region: content
+weight: -20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Acciones principales de la administración'
+  provider: core
+  label_display: '0'
+visibility: {  }

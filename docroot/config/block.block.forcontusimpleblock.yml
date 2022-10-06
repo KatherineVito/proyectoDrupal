@@ -1,0 +1,20 @@
+uuid: cb25543f-e954-43ea-bb6c-bb76114d3b7e
+langcode: es
+status: true
+dependencies:
+  module:
+    - forcontu_blocks
+  theme:
+    - forcontu_bartik
+id: forcontusimpleblock
+theme: forcontu_bartik
+region: sidebar_second
+weight: 0
+provider: null
+plugin: forcontu_blocks_simple_block
+settings:
+  id: forcontu_blocks_simple_block
+  label: 'Custom Title'
+  provider: forcontu_blocks
+  label_display: '0'
+visibility: {  }

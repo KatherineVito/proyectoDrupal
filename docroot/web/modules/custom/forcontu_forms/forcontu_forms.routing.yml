@@ -1,0 +1,24 @@
+forcontu_forms.settings:
+  path: '/admin/config/development/forcontu'
+  defaults:
+    _form: '\Drupal\forcontu_forms\Form\ForcontuSettingsForm'
+    _title: 'Forcontu Forms'
+  requirements:
+    _permission: 'forcontu form access'
+
+forcontu_forms.simple:
+  path: '/forcontu/forms/simple'
+  defaults:
+    _form: '\Drupal\forcontu_forms\Form\Simple'
+    _title: 'Simple Form'
+  requirements:
+    _permission: 'access content'
+    _custom_access: '\Drupal\forcontu_forms\Form\Simple::access'
+
+forcontu_forms.confirm:
+  path: '/forcontu/forms/confirm/{node}'
+  defaults:
+    _form: '\Drupal\forcontu_forms\Form\ForcontuConfirmForm'
+    _title: 'Confirm Form'
+  requirements:
+    _permission: 'forcontu forms access'

@@ -1,0 +1,5 @@
+forcontu_forms.settings:
+  title: Forcontu Forms Settings
+  route_name: forcontu_forms.settings
+  parent: system.admin_config_development
+  description: 'Configuration form example.'

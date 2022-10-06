@@ -1,0 +1,13 @@
+forcontu_layout_two_column:
+  label: 'Forcontu Layout Two Column'
+  category: 'Forcontu Theming Layouts'
+  template: templates/forcontu-layout-two-column
+  library: forcontu_theming/layouts
+  default_region: first
+  icon_map:
+    - [first, second]
+  regions:
+    first:
+      label: First
+    second:
+      label: Second

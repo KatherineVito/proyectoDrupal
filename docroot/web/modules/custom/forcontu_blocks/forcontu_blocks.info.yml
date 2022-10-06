@@ -1,0 +1,6 @@
+name: Forcontu Blocks
+type: module
+description: Form Blocks
+package: Forcontu
+core: 8.x
+core_version_requirement: ^8 || ^9

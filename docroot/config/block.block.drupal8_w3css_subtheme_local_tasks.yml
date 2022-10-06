@@ -1,0 +1,22 @@
+uuid: c16c7f84-a97c-4459-a975-f170c4681442
+langcode: es
+status: true
+dependencies:
+  theme:
+    - drupal8_w3css_subtheme
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: drupal8_w3css_subtheme_local_tasks
+theme: drupal8_w3css_subtheme
+region: content
+weight: -40
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Pestañas
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

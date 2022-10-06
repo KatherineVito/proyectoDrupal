@@ -1,0 +1,28 @@
+{#
+/**
+  * @file
+  * Custom layout to display a two-column layout.
+  *
+  * Available variables:
+  * - content: The content for this layout.
+  * - attributes: HTML attributes for the layout <div>.
+  * - region_attributes: HTML attributes for regions.
+  *
+  * @ingroup themeable
+  */
+#}
+
+{% if content %}
+  <div {{ attributes.addClass('forcontu-layout-two-column') }}>
+    {% if content.first %}
+      <div {{ region.attributes.first.addClass('layout__region--first') }}>
+        {{ content.first }}
+      </div>
+    {% endif %}
+    {% if content.second %}
+      <div {{ region_attributes.second.addClass('layout__region--second') }}>
+        {{ content.second }}s
+      </div>
+    {% endif %}
+  </div>
+{% endif %}

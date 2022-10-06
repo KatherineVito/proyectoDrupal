@@ -1,0 +1,14 @@
+uuid: c8dd4877-74f0-4248-9ec9-22240f60a258
+name: 'katty sitio web'
+mail: katyjulio16@gmail.com
+slogan: 'El mejor sitio web'
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: es
+default_langcode: es
+_core:
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE

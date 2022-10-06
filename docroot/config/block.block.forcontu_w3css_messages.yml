@@ -1,0 +1,22 @@
+uuid: 1ee20b12-53f8-4d28-afd9-4cc4e527e0a3
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - forcontu_w3css
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: forcontu_w3css_messages
+theme: forcontu_w3css
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Mensajes de estado'
+  provider: system
+  label_display: '0'
+visibility: {  }

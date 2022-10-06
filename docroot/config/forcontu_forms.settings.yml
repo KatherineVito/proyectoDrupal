@@ -1,0 +1,7 @@
+message: 'Default message'
+allowed_types:
+  - page
+  - article
+_core:
+  default_config_hash: Q8dRcSFORaz30q4Ci_yIe2JluIQNtSqFIgcrN39FDrc
+langcode: es

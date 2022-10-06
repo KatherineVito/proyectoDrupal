@@ -1,0 +1,23 @@
+uuid: ffca3ad7-7a71-49a9-b147-0d4dc3af4ad7
+langcode: es
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - drupal8_w3css_subtheme
+_core:
+  default_config_hash: Q-4EcGAsu26ICu4ejEz0uE1zv4akpiaOsizxgZfAmEw
+id: drupal8_w3css_subtheme_search
+theme: drupal8_w3css_subtheme
+region: sidebar_first
+weight: -1
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Buscar
+  provider: search
+  label_display: visible
+  page_id: node_search
+visibility: {  }

@@ -1,0 +1,35 @@
+<?php
+
+/**
+ *  Implements hook_theme()
+ */
+function forcontu_theming_theme($existing, $type, $theme, $path) {
+  return [
+    'forcontu_theming_dimensions' => [
+      'variables' => [
+        'length' => NULL,
+        'width' => NULL,
+        'height' => NULL,
+        'unit' => 'cm.'
+      ],
+      'templates' => 'forcontu-theming-dimensions',
+    ],
+  ];
+}
+
+/**
+ *  Implements MODULE_preprocess_HOOK() for forcontu_theming_dimensions.
+ */
+function forcontu_theming_preprocess_forcontu_theming_dimensions(&$variables) {
+  $variables['#attached']['library'][] = 'forcontu_theming/forcontu_theming.css';
+}
+
+/**
+ *  Implements hook_theme_suggestions_HOOK_alter() for HOOK
+ *  'forcontu_theming_dimensions'.
+ */
+function forcontu_theming_theme_suggestions_forcontu_theming_dimensions_alter(array &$suggestions, array $variables) {
+  if (\Drupal::currentUser()->isAuthenticated()){
+    $suggestions[] = 'forcontu_theming_dimensions__logged_in';
+  }
+}

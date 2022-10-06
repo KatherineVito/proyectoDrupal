@@ -1,0 +1,6 @@
+name: Forcontu Plugins
+type: module
+description: Forcontu Plugins
+package: Forcontu
+core: 8.x
+core_version_requirement: ^8 || ^9

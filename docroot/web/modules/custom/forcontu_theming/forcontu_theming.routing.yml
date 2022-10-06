@@ -1,0 +1,7 @@
+forcontu_test.example:
+  path: '/forcontu/theming/render'
+  defaults:
+    _title: 'Render Arrays'
+    _controller: '\Drupal\forcontu_theming\Controller\ForcontuThemingController::render'
+  requirements:
+    _permission: 'access content'

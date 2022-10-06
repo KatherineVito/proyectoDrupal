@@ -1,0 +1,31 @@
+forcontu_test.example:
+  path: '/forcontu/test/example'
+  defaults:
+    _title: 'Example'
+    _controller: '\Drupal\forcontu_test\Controller\ForcontuTestController::build'
+  requirements:
+    _permission: 'access content'
+
+forcontu_test.simple:
+  path: '/forcontu/test/simple'
+  defaults:
+    _title: 'Simple'
+    _form: 'Drupal\forcontu_test\Form\SimpleForm'
+  requirements:
+    _permission: 'access content'
+
+forcontu_test.settings:
+  path: '/admin/config/forcontu/forcontu_test/settings'
+  defaults:
+    _title: 'Settings'
+    _form: 'Drupal\forcontu_test\Form\SettingsForm'
+  requirements:
+    _permission: 'administer site configuration'
+
+forcontu_test.example_confirm:
+  path: '/forcontu-test/example-confirm'
+  defaults:
+    _title: 'Example confirm'
+    _form: 'Drupal\forcontu_test\Form\ExampleConfirmForm'
+  requirements:
+    _permission: 'administer site configuration'

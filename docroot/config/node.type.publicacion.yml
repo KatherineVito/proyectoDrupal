@@ -1,0 +1,18 @@
+uuid: ac287778-83b1-48cd-8d4e-7fb127f1b386
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Publicacion
+type: publicacion
+description: 'Publicación de libros'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

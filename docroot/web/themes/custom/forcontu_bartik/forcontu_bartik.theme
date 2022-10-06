@@ -1,0 +1,46 @@
+<?php
+
+/**
+ *  Implements hook_preprocess_HOOK() for comment.html.twig
+ */
+
+function forcontu_bartik_preprocess_comment(&$variables) {
+  $variables['attributes']['class'][] = 'forcontu';
+}
+
+/**
+ *  Implements hook_preprocess()
+ */
+
+function forcontu_bartik_preprocess(&$variables, $hook) {
+  $variables['twig_debug'] = \Drupal::service('twig')->isDebug();
+}
+
+/**
+ * Implements hook_form_system_theme_settings_alter().
+ */
+
+function forcontu_bartik_form_system_theme_settings_alter(&$form,
+                                                          \Drupal\Core\Form\FormStateInterface $form_state) {
+
+  $form['forcontu_bartik'] = [
+    '#type' => 'fieldset',
+    '#title' => t('Bartik Forcontu settings'),
+  ];
+
+  $form['forcontu_bartik']['show_twig_message'] = [
+    '#type' => 'checkbox',
+    '#title' => t('Display "Twig Debug" message'),
+    '#default_value' => theme_get_setting('show_twig_message'),
+    '#description' => t('Check this option if you want to display
+    a message when Twig Debug is enabled.'),
+  ];
+}
+
+/**
+ *  Implements hook_preprocess_HOOK() for page.html.twig.
+ */
+
+function forcontu_bartik_preprocess_page(&$variables) {
+  $variables['show_twig_message'] = theme_get_setting('show_twig_message');
+}

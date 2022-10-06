@@ -1,0 +1,22 @@
+uuid: e63d8f72-27da-4305-88cc-1b5d5029d801
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - forcontu_w3css
+_core:
+  default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
+id: forcontu_w3css_powered
+theme: forcontu_w3css
+region: header
+weight: 10
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Funciona con Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

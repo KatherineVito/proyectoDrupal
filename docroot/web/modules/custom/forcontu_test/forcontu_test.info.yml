@@ -1,0 +1,7 @@
+name: Forcontu Test
+type: module
+description: Form Test
+package: Forcontu
+core: 8.x
+core_version_requirement: ^8 || ^9
+configure: forcontu_test.settings

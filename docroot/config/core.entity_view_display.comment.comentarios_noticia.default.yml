@@ -1,0 +1,28 @@
+uuid: 9832d8f3-a58e-488d-9b59-679033f95210
+langcode: es
+status: true
+dependencies:
+  config:
+    - comment.type.comentarios_noticia
+    - field.field.comment.comentarios_noticia.comment_body
+  module:
+    - text
+id: comment.comentarios_noticia.default
+targetEntityType: comment
+bundle: comentarios_noticia
+mode: default
+content:
+  comment_body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

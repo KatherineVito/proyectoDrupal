@@ -1,0 +1,20 @@
+uuid: 28f83b29-7e38-4495-bb2b-8819aeefd689
+langcode: es
+status: true
+dependencies:
+  theme:
+    - drupal8_w3css_subtheme
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: drupal8_w3css_subtheme_local_actions
+theme: drupal8_w3css_subtheme
+region: content
+weight: -20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Acciones principales de la administración'
+  provider: core
+  label_display: '0'
+visibility: {  }
